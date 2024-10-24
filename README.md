@@ -29,9 +29,13 @@ addin users app
 1. add tasks 
 2. add user to tasks model
 3. makemigrations + migrate
+4. runserver
 ** at this point:
    / all tasks + users
 
+1. adding favorite color to user
+2. makemigrations, migrate
+3. runserver
 
 
 
