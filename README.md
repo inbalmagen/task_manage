@@ -26,6 +26,14 @@ addin users app
    / all tasks
    /admin/ → tasks, users
 
+1. add tasks 
+2. add user to tasks model
+3. makemigrations + migrate
+** at this point:
+   / all tasks + users
+
+
+
 
    
 
