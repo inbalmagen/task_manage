@@ -37,6 +37,10 @@ addin users app
 2. makemigrations, migrate
 3. runserver
 
+1. adding endpoints in views.py, urls.py
+
+
+
 
 
    
