@@ -55,6 +55,35 @@ https://django-rest-framework-simplejwt.readthedocs.io/en/latest/getting_started
 
    result: refresh token, access token
 
+permissions:
+1. @permission_classes([IsAuthenticated])
+2. from rest_framework.decorators import api_view, permission_classes
+   from rest_framework.permissions import IsAuthenticated
+3. check in thunder client: GET
+   login to get new access token
+   http://127.0.0.1:8000
+
+   Auth → Bearer → past access token
+   result: user tasks:
+   [
+  {
+    "id": 1,
+    "name": "washe the dishes",
+    "deadline": "2024-10-24",
+    "done": false,
+    "user": 1
+  },
+  {
+    "id": 2,
+    "name": "sweep the floor",
+    "deadline": "2024-10-25",
+    "done": false,
+    "user": 1
+  }
+]
+
+
+
    
 
 
