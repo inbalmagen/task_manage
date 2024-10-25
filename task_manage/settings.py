@@ -27,7 +27,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'tasks',
     'rest_framework',
-    'users'
+    'rest_framework_simplejwt',
+    'users',
 ]
 
 MIDDLEWARE = [
@@ -41,6 +42,12 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'task_manage.urls'
+
+REST_FRAMEWORK = {   
+    'DEFAULT_AUTHENTICATION_CLASSES': (       
+        'rest_framework_simplejwt.authentication.JWTAuthentication',
+    )   
+}
 
 TEMPLATES = [
     {

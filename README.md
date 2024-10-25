@@ -39,6 +39,24 @@ addin users app
 
 1. adding endpoints in views.py, urls.py
 
+login:
+https://django-rest-framework-simplejwt.readthedocs.io/en/latest/getting_started.html#installation
+
+1. pip install JWT
+2. REST_FRAMEWORK =
+3. add tokens paths to project urls.py
+4. INSTALLED_APPS
+5. runserver
+6. check in thunder client: POST
+   http://127.0.0.1:8000/login/
+
+   {"username":"admin",
+   "password":"123"}
+
+   result: refresh token, access token
+
+   
+
 
 
 
